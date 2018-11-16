@@ -41,16 +41,12 @@
     background: transparent;
   }
   
-  #mainNav {
-    background-color: #212529;
-  }
-  
   #mainNav .navbar-toggler {
     font-size: 12px;
     right: 0;
     padding: 13px;
     text-transform: uppercase;
-    color: white;
+    color: darkolivegreen;
     border: 0;
     background-color: #fed136;
     font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
@@ -65,12 +61,13 @@
     color: #fec503;
   }
   
-  #mainNav .navbar-nav .nav-item .nav-link {
+  /*changes the content in the nav bar*/
+  #mainNav .navbar-nav .nav-item .nav-link { 
     font-size: 90%;
     font-weight: 400;
     padding: 0.75em 0;
     letter-spacing: 1px;
-    color: white;
+    color: darkolivegreen;
     font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   }
   
@@ -114,8 +111,8 @@
     background-attachment: scroll;
     background-position: center center;
     background-size: cover;
-    padding-top: 150px;
-    padding-bottom: 100px;
+    padding-top: 250px;
+    padding-bottom: 200px;
   }
   
   header.masthead .intro-text .intro-lead-in {
@@ -307,11 +304,34 @@
     background-color: #212529;
   }
 
+  #about {
+    padding-top: 40px;
+    padding-bottom: 15px;
+
+  }
+
+  #profileImage {
+      width: 30%;
+      margin: 25px 15px 15px 0;
+  }
+
+  #skills {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  #portfolio {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
   #contact {
-    background-color: #212529;
-    background-image: url("../images/bryce_canyon.jpg");
+    background-image: url("../images/notepaper.jpg");
     background-repeat: no-repeat;
     background-position: center;
+    padding-top: 100px;
+    padding-bottom: 50px;
+
   }
 
   footer {
