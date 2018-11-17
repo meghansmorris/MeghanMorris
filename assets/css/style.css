@@ -106,7 +106,8 @@
   .masthead {
     text-align: center;
     color: white;
-    background-image: url("../images/table_food.jpg");
+    text-shadow: 1px 1px #212529;
+    background-image: url("../images/bloom-blossom-flora-775995.jpg");
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: center center;
@@ -316,8 +317,10 @@
   }
 
   #skills {
-    padding-top: 50px;
+    padding-top: 60px;
     padding-bottom: 50px;
+    background-color: #4f5573;
+    color: lightgrey;
   }
 
   #portfolio {
@@ -327,6 +330,7 @@
 
   #contact {
     background-image: url("../images/notepaper.jpg");
+    opacity: 0.7;
     background-repeat: no-repeat;
     background-position: center;
     padding-top: 100px;
