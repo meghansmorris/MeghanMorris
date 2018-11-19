@@ -307,13 +307,22 @@
 
   #about {
     padding-top: 40px;
-    padding-bottom: 15px;
+    padding-bottom: 18px;
 
   }
 
   #profileImage {
-      width: 30%;
-      margin: 25px 15px 15px 0;
+    width: 75%;
+    height: 75%;
+    margin-top: 35px;
+    margin-bottom: 10px;
+  }
+
+  .fablinks {
+    text-align: center;
+    display: inline-block;
+    color: grey;
+    margin: 10px;
   }
 
   #skills {
@@ -336,6 +345,15 @@
     padding-top: 100px;
     padding-bottom: 50px;
 
+  }
+
+  .list-inline-item {
+    color: grey;
+    margin: 5px;
+  }
+
+  a {
+    color: grey;
   }
 
   footer {
