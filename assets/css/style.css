@@ -327,7 +327,7 @@
 
   #skills {
     padding-top: 60px;
-    padding-bottom: 50px;
+    padding-bottom: 60px;
     background-color: #4f5573;
     color: lightgrey;
   }
@@ -345,6 +345,19 @@
     padding-top: 100px;
     padding-bottom: 50px;
 
+  }
+
+  .carousel-caption:hover {
+    background-color: grey;
+    color: black;
+    opacity: .9;
+
+  }
+
+  .carousel-caption {
+    background-color: white;
+    color: white;
+    opacity: .1;
   }
 
   .list-inline-item {
