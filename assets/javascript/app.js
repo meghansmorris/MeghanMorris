@@ -25,3 +25,59 @@
     })
   
   })(jQuery); // End of use strict
+
+
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyApimrcSlfTnkhn_rZinLikLng2PwYCFvc",
+      authDomain: "portfolio-site-27d83.firebaseapp.com",
+      databaseURL: "https://portfolio-site-27d83.firebaseio.com",
+      projectId: "portfolio-site-27d83",
+      storageBucket: "portfolio-site-27d83.appspot.com",
+      messagingSenderId: "897293027671"
+  };
+  firebase.initializeApp(config);
+
+  //Reference messages collection
+  var messagesRef = firebase.database().ref("messages");
+
+  //Event listener for form event
+  document.getElementById("contactForm").addEventListener("submit", submitForm);
+
+  //Submit form
+  function submitForm(e) {
+    e.preventDefault();
+
+    var name = getInputVal('name');
+    var email = getInputVal('email');
+    var phone = getInputVal('phone');
+    var message = getInputVal('message');
+
+    //Save message
+    saveMessage(name, email, phone, message);
+
+    //Show confirmation alert
+    document.querySelector(".alert").style.display = "block";
+    //Hide alert after 5 seconds
+    setTimeout(function() {
+      document.querySelector(".alert").style.display = "none";
+    },5000);
+    //Clear form
+    document.getElementById("contactForm").reset(); 
+  };
+
+  function getInputVal(id) {
+    return document.getElementById(id).value;
+  };
+
+  //Save messages to firebase
+  function saveMessage(name, email, phone, message) {
+    var newMessageRef = messagesRef.push();
+
+    newMessageRef.set({
+      name: name,
+      email: email,
+      phone: phone,
+      message: message
+    });
+  };
