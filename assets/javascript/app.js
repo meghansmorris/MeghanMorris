@@ -1,3 +1,7 @@
+require("dotenv").config(); 
+var keyInfo = require("./keys.js");
+
+
 (function($) {
     "use strict"; // Start of use strict
   
@@ -28,15 +32,9 @@
 
 
     // Initialize Firebase
-    var config = {
-      apiKey: "AIzaSyApimrcSlfTnkhn_rZinLikLng2PwYCFvc",
-      authDomain: "portfolio-site-27d83.firebaseapp.com",
-      databaseURL: "https://portfolio-site-27d83.firebaseio.com",
-      projectId: "portfolio-site-27d83",
-      storageBucket: "portfolio-site-27d83.appspot.com",
-      messagingSenderId: "897293027671"
-  };
-  firebase.initializeApp(config);
+    var config = keyInfo.firebase;
+  
+    firebase.initializeApp(config);
 
   //Reference messages collection
   var messagesRef = firebase.database().ref("messages");
