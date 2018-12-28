@@ -1,5 +1,5 @@
-var dotenv = require("dotenv").config(); 
-var keyInfo = require("./keys.js");
+//var dotenv = require("dotenv").config(); 
+//var keyInfo = require("./keys.js");
 
 
 (function($) {
@@ -32,7 +32,14 @@ var keyInfo = require("./keys.js");
 
 
     // Initialize Firebase
-    var config = keyInfo.firebase;
+    var config = {
+      apiKey: "AIzaSyApimrcSlfTnkhn_rZinLikLng2PwYCFvc",
+      authDomain: "portfolio-site-27d83.firebaseapp.com",
+      databaseURL: "https://portfolio-site-27d83.firebaseio.com",
+      projectId: "portfolio-site-27d83",
+      storageBucket: "portfolio-site-27d83.appspot.com",
+      messagingSenderId: "897293027671"
+    };
   
     firebase.initializeApp(config);
 
