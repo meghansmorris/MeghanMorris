@@ -1,6 +1,4 @@
-//var dotenv = require("dotenv").config(); 
-//var keyInfo = require("./keys.js");
-
+var dotenv = require("dotenv").config(); 
 
 (function($) {
     "use strict"; // Start of use strict
@@ -33,13 +31,15 @@
 
     // Initialize Firebase
     var config = {
-      apiKey: "AIzaSyApimrcSlfTnkhn_rZinLikLng2PwYCFvc",
-      authDomain: "portfolio-site-27d83.firebaseapp.com",
-      databaseURL: "https://portfolio-site-27d83.firebaseio.com",
-      projectId: "portfolio-site-27d83",
-      storageBucket: "portfolio-site-27d83.appspot.com",
-      messagingSenderId: "897293027671"
+      apiKey: process.env.apiKey,
+      authDomain: process.env.authDomain,
+      databaseURL: process.env.databaseURL,
+      projectId: process.env.projectId,
+      storageBucket: process.env.storageBucket,
+      messagingSenderId: process.env.messagingSenderId
     };
+
+    console.log(process.env.apiKey);
   
     firebase.initializeApp(config);
 
