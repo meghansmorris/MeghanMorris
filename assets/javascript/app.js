@@ -1,5 +1,3 @@
-var dotenv = require("dotenv").config(); 
-
 (function($) {
     "use strict"; // Start of use strict
   
@@ -28,18 +26,17 @@ var dotenv = require("dotenv").config();
   
   })(jQuery); // End of use strict
 
+  //require("dotenv").config(); 
 
     // Initialize Firebase
     var config = {
-      apiKey: process.env.apiKey,
-      authDomain: process.env.authDomain,
-      databaseURL: process.env.databaseURL,
-      projectId: process.env.projectId,
-      storageBucket: process.env.storageBucket,
-      messagingSenderId: process.env.messagingSenderId
+      apiKey: "AIzaSyApimrcSlfTnkhn_rZinLikLng2PwYCFvc",
+      authDomain: "portfolio-site-27d83.firebaseapp.com",
+      databaseURL: "https://portfolio-site-27d83.firebaseio.com",
+      projectId: "portfolio-site-27d83",
+      storageBucket: "portfolio-site-27d83.appspot.com",
+      messagingSenderId: "897293027671"
     };
-
-    console.log(process.env.apiKey);
   
     firebase.initializeApp(config);
 
