@@ -63,28 +63,30 @@
     <!-- About -->
     <section class="content-section bg-light" id="about">
       <div class="container text-center">
-        <div class="row">
+        <div class="row d-flex flex-nowrap">
           <div class="col-lg-8 mx-auto">
+            <div class="order-sm-2">
+                <h2>About Me</h2>
 
-            <h2>About Me</h2>
-
-            <p class="lead text-left">I am a user-focused Web Developer with more than 10 years of experience as a strategic writer and marketing-communicator. 
-                These experiences, combined with a certificate from the Full Stack Coding Bootcamp at University of Denver, an MBA degree and undergraduate degree in Journalism, 
-                have allowed me to appreciate a variety of innovative, challenging environments where I thrive as a professional.</p>
-
-            <p class="lead text-left">My unique perspective allows me to dig deeper to create better online user experiences. 
-                I am an avid learner and enjoy collaborating with colleagues to create mission driven web applications.
-                I am knowledgeable in areas such as: full stack development, healthcare, natural products, finance, print and online media, NGOs and sustainable business.</p>
-                      
-            <span><a class="btn btn-secondary btn-xl js-scroll-trigger m-1" href="#skills">See What I Can Offer</a>
-                <a class="btn btn-info btn-xl m-1" target="_blank" href="https://drive.google.com/open?id=1wkZKQA6K6cxme7iTyNwks6BLYrwsYSAJ">View My Resume</a>
-            </span>
+                <p class="lead text-left">I am a user-focused Web Developer with more than 10 years of experience as a strategic writer and marketing-communicator. 
+                    These experiences, combined with a certificate from the Full Stack Coding Bootcamp at University of Denver, an MBA degree and undergraduate degree in Journalism, 
+                    have allowed me to appreciate a variety of innovative, challenging environments where I thrive as a professional.</p>
+    
+                <p class="lead text-left">My unique perspective allows me to dig deeper to create better online user experiences. 
+                    I am an avid learner and enjoy collaborating with colleagues to create mission driven web applications.
+                    I am knowledgeable in areas such as: full stack development, healthcare, natural products, finance, print and online media, NGOs and sustainable business.</p>
+            </div>
+            <div class="order-sm-3">
+                <span><a class="btn btn-secondary btn-xl js-scroll-trigger m-1" href="#skills">See What I Can Offer</a>
+                    <a class="btn btn-info btn-xl m-1" target="_blank" href="https://drive.google.com/open?id=1wkZKQA6K6cxme7iTyNwks6BLYrwsYSAJ">View My Resume</a>
+                </span>
+            </div>
           </div>
           <div class="col-lg-4 mx-auto">
-              <div class="row">
-                    <img class="rounded img-fluid mx-auto d-block" id="profileImage" src="assets/images/ProfilePic-square.jpg" alt="Meghan-Profile_Image">
+              <div class="row order-sm-0">
+                    <img class="rounded img-fluid mx-auto" id="profileImage" src="assets/images/ProfilePic-square.jpg" alt="Meghan-Profile_Image">
               </div>
-              <div class="row mx-auto">
+              <div class="row mx-auto order-sm-1">
                 <span id="portfolio_icons" class="mx-auto d-block">
                         <a href="https://www.linkedin.com/in/meghansmorris/" 
                         target="_blank" class="fablinks">
@@ -105,6 +107,12 @@
           </div>
         </div>
       </div>
+    <!-- Scroll to Top Button-->
+    <div>
+        <a class="scroll-to-top rounded js-scroll-trigger" href="#page-top">
+            <i class="fas fa-angle-up fa-2x"></i>
+        </a>
+    </div>
     </section>
 
     <!-- Skills -->
@@ -216,14 +224,14 @@
                     <i class="fas fa-plus fa-3x"></i>
                     </div>
                 </div>
-                <img class="img-fluid" src="assets/images/NYTpaper.jpg" alt="nyTimesSearch">
+                <img class="img-fluid" src="assets/images/Customer-2.jpg" alt="bamazon_screenshot">
                 </a>
                 <div class="portfolio-caption">
-                <h4>New York Times Article Search</h4>
+                <h4>Bamazon Command Line Application</h4>
                 <p class="text-muted">Coding Bootcamp Assignment</p>
                 <hr>
                 <p class="text-muted">
-                        Technologies Used: HTML/CSS, Bootstrap, Javascript, jQuery, New York Times API, AJAX
+                        Technologies Used: MySQL, NodeJS, Inquirer npm, Javascript
                     </p>
                 </div>
             </div>
@@ -289,6 +297,13 @@
             </div>
             </div>
         </div>
+            <!-- Scroll to Top Button-->
+        <div>
+            <a class="scroll-to-top rounded js-scroll-trigger" href="#page-top">
+                <i class="fas fa-angle-up fa-2x"></i>
+            </a>
+        </div>
+
     </section>
 
     <!-- Contact -->
@@ -342,6 +357,11 @@
         <!-- Footer -->
         <footer>
         <div class="container">
+                <!-- Scroll to Top Button-->
+            <a class="scroll-to-top rounded js-scroll-trigger" href="#page-top">
+                <i class="fas fa-angle-up fa-2x"></i>
+            </a>
+
             <div class="row">
             <div class="col-md-4">
                 <span class="copyright">Copyright &copy; Meghan Morris 2018</span>
@@ -706,11 +726,6 @@
             </div>
             </div>
       
-
-    <!-- Scroll to Top Button-->
-    <a class="scroll-to-top rounded js-scroll-trigger" href="#page-top">
-      <i class="fas fa-angle-up"></i>
-    </a>
 
     <!-- Firebase for contact section -->
     <script src="https://www.gstatic.com/firebasejs/5.7.1/firebase.js"></script>
