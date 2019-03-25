@@ -103,13 +103,13 @@
   }
   
   .masthead {
-    background-image: url("../images/mandala_4-edits.png"), url("../images/mandala_3.png");
+    background-image: url("../images/mandala_4-edits.png");
     background-color: #CED3D4;
-    background-repeat: cover;
-    background-blend-mode: screen, overlay;
-    background-position: top left, bottom right;
+    background-repeat: no-repeat;
+    background-blend-mode: screen;
+    background-position: top left;
     padding-top: 250px;
-    padding-bottom: 150px;
+    padding-bottom: 125px;
     /* background-clip: border-box; */
     opacity: .7;
   }
